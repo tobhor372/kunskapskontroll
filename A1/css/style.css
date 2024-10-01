@@ -244,4 +244,36 @@ textarea {
     page-break-after: avoid;
   }
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.scoreboard {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.game {
+  flex: 2;
+  text-align: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#userChoiceImage, #computerChoiceImage {
+  max-width: 100px;
+  margin: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+}
 

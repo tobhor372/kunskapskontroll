@@ -11,45 +11,42 @@
     }
   </style>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-<h1>Rock, Paper, Scissors</h1>
-<p>Choose one:</p>
+<div class="container">
+  <div class="scoreboard">
+    <h3>Current Score:</h3>
+    <p>Wins: <span id="playerWins">0</span></p>
+    <p>Losses: <span id="playerLosses">0</span></p>
+    <p>Draws: <span id="draws">0</span></p>
 
-<button onclick="playGame('rock')">rock</button>
-<button onclick="playGame('paper')">paper</button>
-<button onclick="playGame('scissors')">scissors</button>
+    <h3>Previous Score:</h3>
+    <p>Previous Wins: <span id="previousPlayerWins">0</span></p>
+    <p>Previous Losses: <span id="previousPlayerLosses">0</span></p>
+    <p>Previous Draws: <span id="previousDraws">0</span></p>
+  </div>
 
+  <div class="game">
+    <h3>Make your choice:</h3>
+    <button onclick="playGame('rock')">Rock</button>
+    <button onclick="playGame('scissors')">Scissors</button>
+    <button onclick="playGame('paper')">Paper</button>
 
-<h2 id="result"></h2>
-<div>
-  <h3>Your Choice:</h3>
-  <img id="userChoiceImage" src="" alt="Ditt val" width="100" height="100">
+    <h3 id="result"></h3>
+
+    <div class="choices">
+      <h3>Your Choice:</h3>
+      <img id="userChoiceImage" src="" style="display:none;" alt="Your choice">
+
+      <h3>Computer's Choice:</h3>
+      <img id="computerChoiceImage" src="" style="display:none;" alt="Computer's choice">
+    </div>
+  </div>
 </div>
 
-<div>
-  <h3>Computers Choice:</h3>
-  <img id="computerChoiceImage" src="" alt="Datorns val" width="100" height="100">
-</div>
-<h3>Points:</h3>
-<p>Player: <span id="playerWins">0</span></p>
-<p>Computer: <span id="computerWins">0</span></p>
   <script src="js/app.js"></script>
 
 </body>
