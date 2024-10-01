@@ -28,9 +28,9 @@ function getCookie(name) {
 }
 
 function saveResultsToCookies() {
-  setCookie('playerWins', playerWins, 7);  // Sparar i 7 dagar
-  setCookie('playerLosses', playerLosses, 7);
-  setCookie('draws', draws, 7);
+  setCookie('playerWins', playerWins, 30);
+  setCookie('playerLosses', playerLosses, 30);
+  setCookie('draws', draws, 30);
 }
 
 function loadPreviousResultsFromCookies() {
